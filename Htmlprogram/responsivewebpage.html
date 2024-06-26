@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="/cssprogram/ewsponsivepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h2 class="Logo">Logo</h2>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Cantact</a>
+            <a href="#">Feedback</a>
+            <button type="button"  class="btnlogin-popup">Login</button>
+    </div>
+</header>
+<div class="wrapper">
+    <span class="span-icon"><i class="fa-solid fa-xmark"></i></span>
+   <div class="form-box Login">
+    <h2>Login</h2>
+    <form action="#">
+        <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+            <input type="email" required>
+            <label>Email</label>
+
+        </div>
+        <div class="input-box">
+            <span class="icon">
+                <i class="fa-solid fa-lock"></i>
+            </span>
+            <input type="password" required>
+            <label>password</label>
+          </div>
+          <div class="remember-forgot">
+            <input type="checkbox" required>
+            <label>Remember me</label>
+            <a href="#">forget password?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register">
+            <p>Don't have  an account?<a class="Register-link"href="#">Register</a></p>
+          </div>
+    </form>
+   </div> 
+   <div class="form-box Register">
+    <h2>Registeration</h2>
+    <form action="#">
+        <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-user"></i></span>
+            <input type="Username" required>
+            <label>Username</label>
+        </div>
+        <div class="input-box">
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+            <input type="text" required>
+            <label>Email</label>
+        </div>
+        <div class="input-box">
+            <span class="icon">
+                <i class="fa-solid fa-lock"></i>
+            </span>
+            <input type="password" required>
+            <label>password</label>
+          </div>
+          <div class="remember-forgot">
+            <input type="checkbox" required>
+            <label>I agree to  the term & condition</label>
+            <a href="#"></a>
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="login-register">
+            <p>already have  an account?<a class ="Login-link"  href="#">Login</a></p>
+          </div>
+    </form>
+   </div>
+</div>
+<script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    <script src="/responsivepage.js"></script>
+</body>
+</html>

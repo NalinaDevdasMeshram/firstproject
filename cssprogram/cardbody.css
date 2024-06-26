@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: #241947;
+}
+#navbar{
+    margin: 50px 50px;
+    border: 5px solid #fff;
+    height: 60px;
+    font-size: 25px;
+}
+#log{
+ color: #f08804;
+}
+a{
+    color: #fff;
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+button{
+   
+    margin-right:50px ;
+    width: 50px;
+    height: 25px;
+    background: #f08804;
+    text-align: center;
+}

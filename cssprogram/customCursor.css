@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color:white;
+}
+body,html{
+    width:100%;
+    height:100%;
+    }
+body{
+    width:100%;
+    height:100%;
+    background-color:rgb(0, 0, 0);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    }
+ body .cursor{
+    width:30px;
+    height:30px;
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius:50px;
+    position: absolute;
+   
+}
+h1{
+    font-size: 10vw;
+    font-weight:900;
+    font-style: bold;
+   }
+

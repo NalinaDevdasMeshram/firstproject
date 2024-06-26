@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+ }
+body,html{
+    width: 100%;
+    height: 100%;
+    }
+/* #box{
+    width: 250px;
+    height: 250px;
+    background-color: lightseagreen;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    /* animation-iteration-count: infinite; */
+    /* animation-fill-mode: forwards; */
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-direction: alternate; */
+/* }
+@keyframes move {
+    0%{
+        left: 0;
+        background-color:lightseagreen;
+        top: 0;
+        rotate: 360degree;
+    }
+    25%{
+          left: 75%;
+          background-color: salmon;
+          top: 0;
+          right: 75%;
+          
+    }
+    50%{
+       
+        left: 75%;
+        background-color: lawngreen;
+        top: 60%;
+  }  */
+  /* 75%{
+    right: 75%;
+    background-color: gold;
+    top: 0;
+} */  
+    
+/* } */
+body{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+h1{
+    font-size: 100px;
+    font-weight: 800;
+    position: relative;
+    letter-spacing: 2px;
+    color: #3c033d;
+    /* text-decoration: underline; */
+    /* animation-name: underline;
+    animation-duration: 3s; */
+
+}
+h1::after{
+ content: "";
+ position: absolute;
+ width: 0%;
+ height: 10px;
+ bottom: 0;
+ background-color:#311010;
+ 
+ left: 0;
+ }
+h1:hover::after{
+    
+    animation-name: line;
+    animation-duration: 3s;
+    /* animation-direction: alternate; 
+    animation-iteration-count: infinite; */
+}
+@keyframes line {
+    0%{
+         left: 0;
+         width: 0;
+    }
+    50%{
+        left: 0;
+       width: 100%;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+    
+}
