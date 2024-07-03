@@ -1,47 +1,19 @@
-// function BST(arr, target){
-// let left = 0;
-// let right = arr.length-1;
-// while(left <= right){
-//     let mid = Math.floor((left + right)/2)
-//     console.log(mid);
-// if(arr[mid] === target){
-//    console.log(arr[mid]);
-// }
-// if(arr[mid]<= right){
-//  left = mid+1;
-// //  console.log(left)
-//   }else{
-//     right = mid-1;
-//     // console.log(right)
-//   }
-// }
-// }
-// const arr =[1,2,5,6,7];
-// const target = 7;
-// console.log(BST(arr,7));
-
-function BST(arr, target){
-  let left = 0;
-  let right = arr.length-1;
+// nums =[1,5,6,8,9,10,12]
+function BinarySearch(){
+  let left = 0, right = nums.length-1;
   while(left <= right){
-    let mid = Math.floor((left+right)/2);
-    // console.log(mid);
-    if(arr[mid] === target){
-      //  console.log(mid);
-    }
-    if (mid < target)
-    {
-      left = mid-1;
-      console.log(left)
-    }else{
-      right = mid+1;
-      console.log(right)
-    }
+    let mid = Math.floor((left + right)/2);
+    console.log(mid);
+    if(nums[mid]=== target)
+      return mid;
+    if(nums[mid]<= target)
+      left = mid -1;
+    else
+     right = right +1;
   }
-  
+ console.log('element not fount')
 }
-
-const arr = [5,1,10,2,6];
-console.log(arr)
-target = 1;
-console.log(BST([5,1,10,2,6],1))
+// BinarySearch(nums, 8);
+let nums = [1,5,6,8,9,10,12]; 
+const target =  9;
+BinarySearch(nums, 8);

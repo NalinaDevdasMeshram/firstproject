@@ -1,10 +1,8 @@
  function BinarySearch(arr, target){
     let left = 0;
     let right = arr.length-1;
-   
-    while(left <= right){
-         
-        let mid = Math.floor((left+right)/2);
+   while(left <= right){
+         let mid = Math.floor((left+right)/2);
         // check if target is present in mid or not
         if(arr[mid]=== target){
             console.log("Number of Iteration:" +arr)

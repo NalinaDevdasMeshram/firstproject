@@ -33,7 +33,7 @@
 
 //   const doubleM = curryMultiply(3);
 //   console.log(doubleM(5));
-
+/* what is Curry :- curry is a technic where multiple function pass as argument to us */
   function multi(x, y){
     return x*y;
   }
