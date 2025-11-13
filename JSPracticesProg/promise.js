@@ -1,9 +1,9 @@
 //-----------promise-------------
 //   const atmavailable = true;
-//  const promise = new Promise(function(resolve,reject){
+//  const promise = new Promise(function(resolve, reject){
 //     if(atmavailable){
 //         const response ={
-//             message:"cash is available",        
+//             message:"cash is available",
 //         } ;
 //         resolve(response);
 //     }else{
@@ -28,7 +28,7 @@
 //             message:"ticket is confirmed",
 //         };
 //         resolve(response);
-    
+
 //     }else{
 //         const response ={
 //             message:"ticket is not confirmed",
@@ -57,7 +57,6 @@
 // }).catch(function(fail){
 //     console.log(fail);
 // })
- 
 
 // let datas ="https://jsonplaceholder.typicode.com/posts";
 
@@ -66,7 +65,7 @@
 //     rowJSONData.json().then(function(finalData){
 //        console.log(finalData);
 //     })
- 
+
 // }).catch(function()
 // {
 //     console.log(error);
@@ -82,7 +81,7 @@
 //     console.log('error');
 // })
 
-// const order = true; 
+// const order = true;
 // const postdata = new Promise(function(resolve, reject){
 //     if(!order){
 //         const response={
@@ -131,20 +130,19 @@
 //         let dta = document.createElement("li")
 //         dta.innerText = post.title;
 //         result.append(dta);
-//     })  
+//     })
 // }
 //------------------asyn/await---------
 //  async function dataApi(){
 //     try{
 //         const postres = await fetch("https://jsonplaceholder.typicode.com/posts");
 //         const result = await postres.json();
-//        console.log (result); 
+//        console.log (result);
 //     }
 //     catch(error){
 //         console.log("somethings went wrong")
 //     }
 //  }
-
 
 //  function APIData(apidata){
 //     const result = document.querySelector(".post-list");
@@ -152,10 +150,9 @@
 //         let dta = document.createElement("li")
 //         dta.innerText = post.title;
 //         result.append(dta);
-//     })  
+//     })
 // }
 // dataApi()
-
 
 // async function fetchData() {
 //     try {
@@ -225,7 +222,7 @@
 //   headers: {
 //     'Content-Type': 'application/json',
 //   },
-//   body: JSON.stringify({ 
+//   body: JSON.stringify({
 //     name: 'Nathan Sebhastian',
 //     username: 'nsebhastian'
 //   }),
@@ -233,7 +230,8 @@
 //   .then(data => console.log(data))
 //-----------DELETE-----------
 //The DELETE request is used when you want to request that a resource be removed permanently from the server.
-  fetch('https://jsonplaceholder.typicode.com/users/1', {
-  method: 'DELETE',
-}).then(response => response.json())
-  .then(data => console.log(data))
+fetch("https://jsonplaceholder.typicode.com/users/1", {
+  method: "DELETE",
+})
+  .then((response) => response.json())
+  .then((data) => console.log(data));

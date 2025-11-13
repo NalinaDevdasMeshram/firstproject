@@ -1,4 +1,4 @@
-// function x() {
+y; // function x() {
 //   for (var i = 1; i <= 5; i++) {
 //     // here we getting output 6 bez var refer same copy does not create new copy
 //     console.log(
