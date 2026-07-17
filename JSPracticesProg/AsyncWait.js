@@ -1,19 +1,19 @@
-// const fetchData = async () => {
+//   const fetchData = async () => {
 //   const response = await fetch(`https://jsonplaceholder.typicode.com/photos`);
 //   const res = response.json();
 //   console.log(res);
-// };
-// fetchData();
+//    };
+//   fetchData();
 
-// async function fetchResult() {
+//   async function fetchResult() {
 //   try {
 //     const response = await fetch(`https://jsonplaceholder.typicode.com/photos`);
 //     const result = await response.json();
 //     console.log(result);
-//   } catch (e) {
+//     } catch (e) {
 //     console.log("something went wrong", e.message);
-//   }
-// }
+//     }
+//  }
 // fetchResult();
 
 var foo = function (name) {

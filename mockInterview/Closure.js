@@ -1,13 +1,13 @@
-//***********CLOSURE********* */
+//***********CLOSURE**********/
 // Function alone with lexical environment from closure;
 
 // function x() {
 //   var a = 7;
 //   function y() {
 //     console.log(a);
-//   }
+//    }
 //   y();
-// }
+//  }
 // x();
 
 function parent() {

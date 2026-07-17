@@ -24,10 +24,12 @@
 // import { Provider } from "react-redux";
 // import Store from "./ReduxConcept/BookingComponent/Store";
 // import BookContainer from "./ReduxConcept/BookingComponent/BookContainer";
-import CountDownTimer from "./CountDownTimer/CountDownTimer";
-import LoginForm from "./LoginForm/LoginForm";
+// import CountDownTimer from "./CountDownTimer/CountDownTimer";
+// import LoginForm from "./LoginForm/LoginForm";
+// import Counter from "./ReduxToolkit/CounterApp/Counter.jsx";
 // import ProDrilling from "./PropsDrilling/ProDrilling";
 // import WeatherApp from "./WeatherApp/WeatherApp";
+import AppManagement from "./ReduxToolkitAppManagement/features/AppManagement";
 function App() {
   return (
     // <Provider store={Store}>
@@ -57,7 +59,9 @@ function App() {
       {/* <BookContainer /> */}
       {/* </Provider> */}
       {/* <CountDownTimer /> */}
-      <LoginForm />
+      {/* <LoginForm /> */}
+      {/* <Counter /> */}
+      <AppManagement />
       {/* <WeatherApp /> */}
     </div>
   );

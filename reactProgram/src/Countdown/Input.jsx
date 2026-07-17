@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import React from "react";
-class Input extends React.Component {
+ import React from "react";
+ class Input extends React.Component {
   handleChange = (e) => {
     const value = parseInt(e.target.value, 10) || 0;
     this.props.onCountChange(value);

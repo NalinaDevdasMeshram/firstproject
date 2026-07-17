@@ -13,7 +13,7 @@ let printName = function (hometown, state, country) {
       " " +
       state +
       " " +
-      country
+      country,
   );
 };
 let printMyname = printName.bind(name, "nagpur");

@@ -13,7 +13,7 @@
 
 // alert("Are???")
 // *********************shallow copy **************************
-// if we make any change in the copy object it will reflect the original object  
+// if we make any change in the copy object it will reflect the original object
 // const arn = ['mango', 'apple', 'grapes', 'banana']
 
 // const myfruit = arn;
@@ -22,7 +22,6 @@
 
 // console.log(myfruit);
 // console.log(arn);
-
 
 // const person ={
 //     name:"Nalina",
@@ -45,14 +44,14 @@
 //       pincode:124055,
 //     }
 // };
-//shallow copy 
-// const originalObject = { 
+//shallow copy
+// const originalObject = {
 //     a: 1,
-//     b: { 
+//     b: {
 //         c: 2,
-//      } 
-//     };  
-// const shallowCopy = {...originalObject};  
+//      }
+//     };
+// const shallowCopy = {...originalObject};
 //  shallowCopy.a = 4;
 //  shallowCopy.b.c = 20;
 //   console.log(originalObject);
@@ -68,13 +67,13 @@
 //   age :30,
 //  }
 // function greet (name, age){
-      
+
 //     console.log(`hello my name is ${this.name} and i am ${this.age} age old`)
 //     }
 //     greet.call(Avinash, 30)
 
-   //************Apply()************ */ 
-  //  we unsure about the argument then we use apply  
+//************Apply()************ */
+//  we unsure about the argument then we use apply
 // const Avinash={
 //       name : "avi",
 //       age :30,
@@ -85,16 +84,14 @@
 //         greet.apply(Avinash)
 // ***************splice*********************
 //  const result = [1,2,5,8,10,12]
-
 //   result.splice(2, 1 ,23,24);
- 
 //   console.log(result)
-  //************slice************/
-  // const res = [1,5,8,9,2,3,7,10];
-  // res.slice (2,5);
-  // res.includes(2)
-  // console.log(res);
-  // console.log(res);
+//************slice************/
+// const res = [1,5,8,9,2,3,7,10];
+// res.slice (2,5);
+// res.includes(2)
+// console.log(res);
+// console.log(res);
 
 // const ticket = false;
 // let promise = new Promise(function(resolve, reject){
@@ -122,10 +119,10 @@
 // }
 // let fullName=function(city){
 //   console.log(this.firstName +" "+ this.lastName+" "+city+"")
- 
+
 // }
 // fullName.call(Name,"mumbai");
-// //function borrowing 
+// //function borrowing
 // const Name1={
 //   firstName:"pornima",
 //   lastName:"meshra",
@@ -139,25 +136,25 @@
 //   },4000);
 // }
 
-  // console.log("start")
-  // setTimeout(function(){
-  //   console.log("settimeout")
-  // },0)
-  // Promise.resolve().then(function(){
-  //   console.log("promise1")
-  // }).then(function(){
-  //   console.log("promise2")
-  // });
+// console.log("start")
+// setTimeout(function(){
+//   console.log("settimeout")
+// },0)
+// Promise.resolve().then(function(){
+//   console.log("promise1")
+// }).then(function(){
+//   console.log("promise2")
+// });
 
-  // console.log("end");
+// console.log("end");
 
-  // let arr =[1,2,3,4,5]
-  // let a=arr[arr.length-1];
-  // let b = arr[0];
-  //  arr[0] = arr[arr.length-1];
-  //  arr[arr.length-1] =b;
+// let arr =[1,2,3,4,5]
+// let a=arr[arr.length-1];
+// let b = arr[0];
+//  arr[0] = arr[arr.length-1];
+//  arr[arr.length-1] =b;
 
-  //  console.log(arr);
+//  console.log(arr);
 //  let a = 10;
 //  if(a===10){
 //   const b = 20;
@@ -179,7 +176,6 @@
 //  const result = parent ();
 //   return result;
 
-   
 // console.log(x);
 // var x =10;
 
@@ -198,7 +194,7 @@
 //   a:10,
 //   b:{
 //     c:50,
-    
+
 //   }
 // }
 
@@ -256,7 +252,7 @@
 //   console.log(pf)
 
 // let str ="racecar";
- 
+
 //  console.log(str.split("").reverse().join(""))
 
 // function parent(){
@@ -268,6 +264,3 @@
 // }
 //  const result = parent();
 // return result();
-
- 
-  

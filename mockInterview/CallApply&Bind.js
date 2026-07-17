@@ -4,7 +4,7 @@ const mentor = {
 };
 const fullName = function (hometown, country) {
   console.log(
-    this.firstName + " " + this.lastName + " " + hometown + " " + country
+    this.firstName + " " + this.lastName + " " + hometown + " " + country,
   );
 };
 
@@ -14,7 +14,7 @@ const student = {
   firstName: "ajo",
   lastName: "lastname",
 };
-n;
+
 fullName.call(student, "Bengaluru", "india");
 fullName.apply(student, ["nagpur", "india"]);
 const newfn = fullName.bind(student, "umred", "india");

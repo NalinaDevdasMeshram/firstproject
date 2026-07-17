@@ -1,18 +1,21 @@
 "use strict";
-// ************************what is this Keywords:********
-//  this keyword point to the object executing the current function
-// **************inside the global scope ********************
-//   inside the global scope it is reference to the global object  its depend on where we the js runtime
+//**********what is this Keywords:********
+// this keyword point to the object executing the current function.
+
+//*********inside the global scope***************
+//inside the global scope it is reference to the global object its depend on where we the js      runtime
 console.log(this);
 
-// *********************inside the function *************************
-//  inside the function depends on the strict and non- stirct mode
-// non-strict => window
+// ***********inside the function *************
+//  inside the function depends on the strict and non-stirct mode
+//
+//  non-strict => window
 //  strict => undefined
 function x() {
   console.log(this);
 }
 x();
+
 // non-strict mode is the (substitutions)
 // if the value in the non strict mode undefined or null it replce by global object
 
@@ -21,7 +24,7 @@ x();
 x(); // undefined
 window.x(); // global object
 
-//***********inside the object method ******* */
+//***********inside the object method ********/
 
 const obj = {
   name: "nalina",

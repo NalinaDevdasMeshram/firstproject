@@ -34,16 +34,16 @@
 //   const doubleM = curryMultiply(3);
 //   console.log(doubleM(5));
 
-/* what is Curry :- curry is a technic where multiple function pass as argument to us */
+/* what is Curry :- Curry is a technic where multiple function pass as argument to us.. */
 
 function multi(x, y) {
   return x * y;
-}
-function twonumber(x) {
+ }
+ function twonumber(x)  {
   return function (y) {
     return multi(x, y);
   };
-}
+ }
 
 const double = twonumber(2);
 console.log(double(6));

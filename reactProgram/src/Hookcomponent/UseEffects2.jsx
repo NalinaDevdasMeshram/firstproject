@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 const UseEffects2 = () => {
   const [count, setCount] = useState(0);
   const [value, setValue] = useState(0);
+
   useEffect(() => {
     setTimeout(() => {
       setCount((count) => count + 1);

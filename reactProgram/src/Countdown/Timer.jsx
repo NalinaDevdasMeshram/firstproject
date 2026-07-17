@@ -1,6 +1,6 @@
 import React from "react";
-import Input from "./Input";
-import Button from "./Button";
+import Input from "./Input.jsx";
+import Button from "./Button.jsx";
 class Timer extends React.Component {
   constructor() {
     super();
@@ -11,11 +11,13 @@ class Timer extends React.Component {
   handleChange = (count) => {
     this.setState({ count });
   };
+
   onDecrement = () => {
     this.setState((preState) => ({
       count: preState.count - 1,
     }));
   };
+
   render() {
     return (
       <div>

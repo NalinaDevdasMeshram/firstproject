@@ -1,54 +1,45 @@
-import React, { useState } from "react";
-const Product = [
-  { id: 1, name: "laptop", price: "50,000", category: "Electronics" },
-  { id: 2, name: "pants", price: "5889", category: "Clothings" },
-  { id: 3, name: "sofa", price: "25000", category: "Home" },
-  { id: 4, name: "smartWatch", price: "5000", category: "Electronics" },
-  { id: 5, name: "vaccume clearn", price: "599", category: "Home" },
-  { id: 6, name: "T-shirt", price: "499", category: "Clothings" },
-];
+import React from "react";
 
-const categories = ["Electronics", "Home", "Clothings"];
 const ProductList = () => {
-  const [selectCategory, setSelectCategory] = useState("");
+  const categories = ["electronics", "clothing", "home appliances"];
+  const products = [
+    { id: 1, name: "camera", price: 10000, category: "electronics" },
+    { id: 2, name: "T-shirt", price: 500, category: "clothing" },
+    { id: 3, name: "pots", price: 2000, category: "home appliances" },
+    { id: 4, name: "laptop", price: 50000, category: "electronics" },
+    { id: 5, name: "sheos", price: 2000, category: "clothing" },
+    { id: 6, name: "fridge", price: 30000, category: "home applisnces" },
+  ];
 
-  const handlecheckbox = (category) => {
-    console.log(category);
-    if (selectCategory === category) {
-      setSelectCategory("");
-    } else {
-      setSelectCategory(category);
-    }
-  };
-  const filteredProduct =
-    selectCategory.length === 0
-      ? Product
-      : Product.filter((p) => selectCategory.includes(p.category));
+  const handlefilter =(e)=>{
+     e.preventDefault();
+     const filterProducts= 
+  }
   return (
-    <div>
-      <h4>Product Listing</h4>
-      <label>filtered by category:</label>
+    <div
+      style={{
+        textAlign: "center",
+        margin: "20px",
+        padding: "20px",
+        border: "1px solid black",
+      }}
+    >
+      <h2>Product List</h2>
+      <select name="categories" id="categories" onClick={handlefilter}>
+        <option value="electronics">electronics</option>
+        <option value="clothing">clothing</option>
+        <option value="home appliances">home appliance</option>
+      </select>
       <div>
-        {categories.map((val) => (
-          <label key={val}>
-            <input
-              type="checkbox"
-              value={val}
-              checked={selectCategory.includes(val)}
-              onChange={() => handlecheckbox(val)}
-            />
-            {val}
-          </label>
-        ))}
-      </div>
-      <div>
-        {filteredProduct.map((Product) => (
-          <div key={Product.id}>
-            <h5>name:{Product.name}</h5>
-            <p>price:{Product.price}</p>
-            <span>category:{Product.category}</span>
-          </div>
-        ))}
+        {products.map((products) => {
+          return (
+            <div key={products.id}>
+              <h3>{products.name}</h3>
+              <h4>{products.price}</h4>
+              <h4>{products.category}</h4>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

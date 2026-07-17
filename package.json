@@ -8,9 +8,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react-redux": "^9.1.2",
+    "@reduxjs/toolkit": "^2.11.2",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^6.23.1",
-    "redux": "^5.0.1"
+    "redux": "^5.0.1",
+    "uuid": "^13.0.0"
   },
   "description": ""
 }

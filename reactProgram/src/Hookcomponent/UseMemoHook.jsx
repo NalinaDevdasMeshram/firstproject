@@ -1,4 +1,4 @@
-// useMemo is a react hook which return the memoized the value (this means it caching a value so that it does't need to be recalculation )
+// useMemo is a react hook which return the memoized the value (this means it caching a value so that it does't need to be recalculation)
 // this can be improve the perofrmance of the application
 
 import { useMemo, useState } from "react";

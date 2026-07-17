@@ -1,6 +1,5 @@
-// useReducer is a react hook  userReducer hook is similar to useState hook  but instead of providing state and setter function it provides the state and dispatch function
-// useReducer hook accept two arguments 1. reducer function 2.intial state AND it return current state and dispatch method
-
+// useReducer is a react hook userReducer hook is similar to useState hook  but instead of   providing state and setter function it provides the state and dispatch function
+// useReducer hook accept two arguments 1. reducer function 2.intial state AND it return current  state and dispatch method
 import { useReducer } from "react";
 
 const UseReducerHook = () => {

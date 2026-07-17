@@ -1,6 +1,6 @@
 //-----------promise-------------
 //   const atmavailable = true;
-//  const promise = new Promise(function(resolve, reject){
+//   const promise = new Promise(function(resolve, reject){
 //     if(atmavailable){
 //         const response ={
 //             message:"cash is available",
@@ -21,7 +21,6 @@
 // })
 
 // const ticketReveration = false;
-
 // let ticket = new Promise(function(resolve, reject){
 //     if(ticketReveration){
 //         const response ={
@@ -60,8 +59,8 @@
 
 // let datas ="https://jsonplaceholder.typicode.com/posts";
 
-// let postPromise = fetch(datas);
-// postPromise.then(function(rowJSONData){
+//  let postPromise = fetch(datas);
+//  postPromise.then(function(rowJSONData){
 //     rowJSONData.json().then(function(finalData){
 //        console.log(finalData);
 //     })
@@ -109,13 +108,13 @@
 // resolve("I am here")
 // promisepost.then((success)=>{
 //     console.log(success)
-// })
+//   })
 // })
 // return promisepost;
 
 // const postdt = fetch("https://jsonplaceholder.typicode.com/posts");
-//     console.log(postdt);
-// postdt.then(function(rowMaterial){
+// console.log(postdt);
+// postdt.then(function(rowMaterial) {
 //     rowMaterial.json().then(function(finalData){
 //         console.log(finalData);
 //         APIData(finalData);
@@ -166,15 +165,15 @@
 //   fetchData();
 
 //-----------fetch Api-------------
-
 // const promise = fetch("https://jsonplaceholder.typicode.com/posts")
 // .then((response)=>{
-// return response.json();
+//  return response.json();
 // }).then((data)=>{
-//      console.log(data)
+//     console.log(data)
 // }).catch((error)=>{
 //     console.log("something went the wrong")
 // })
+
 //------------fetching the data---------------
 // fetch('https://jsonplaceholder.typicode.com/users/1')
 //   .then(response => response.json())
@@ -189,13 +188,13 @@
 //       })
 
 //----------------post-----------------------------
-//If you want to send a POST request instead of a GET request, you need to define the second argument when calling the function, which is the option object.
+//If you want to send a POST request instead of a GET request, you need to define the second   argument when calling the function, which is the option object.
 // fetch('https://jsonplaceholder.typicode.com/users', {
-//   method: 'POST',
+//   method:'POST',
 //   headers: {
-//     'Content-Type': 'application/json',
+//     'Content-Type':'application/json',
 //   },
-//   body: JSON.stringify({
+//     body: JSON.stringify({
 //     name: 'Nathan Sebhastian',
 //     email: 'ns@mail.com'
 //   }),

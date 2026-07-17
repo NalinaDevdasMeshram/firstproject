@@ -9,7 +9,7 @@ const debouncing = function betterFunction(fn, d) {
     // let timer;
     clearTimeout(timer);
     timer = setTimeout(() => {
-      fn.apply(); //(this, arguments) This ensures that the debounced function receives any arguments passed to                 it                   and keeps the correct context (this).
+      fn.apply(); //(this, arguments) This ensures that the debounced function receives any arguments passed to it and keeps the correct context (this).
     }, d);
   };
 };

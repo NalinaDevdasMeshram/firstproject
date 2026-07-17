@@ -1,4 +1,4 @@
-// Higher order function which take another function as an argument or return function form it is known as HOF ....
+// Higher order function which take another function as an argument or return function form it is   known as HOF ....
 // proc: modurality, resuability, pure function, comprehensive function
 
 // function x() {
@@ -38,21 +38,21 @@
 // console.log(calcualteDiameter(radius));
 
 //***************IMPLEMENTATION HOF**********************/
-const radius = [1, 2, 3, 4];
+ const radius = [1, 2, 3, 4];
 
-const Area = function (radius) {
+ const Area = function (radius) {
   return Math.PI * radius * radius;
-};
+ };
 
-const circumference = function (radius) {
+ const circumference = function (radius) {
   return 2 * Math.PI * radius;
-};
+ };
 
-const Diameter = function (radius) {
+ const Diameter = function (radius) {
   return 2 * radius;
-};
+ };
 
-const calculate = function (radius, logic) {
+ const calculate = function (radius, logic) {
   const output = [];
   for (let i = 0; i < radius.length; i++) {
     output.push(logic(radius[i]));

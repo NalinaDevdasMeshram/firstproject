@@ -1,4 +1,4 @@
-/***settimeout.html*** */
+/***settimeout.html****/
 console.log("start");
 setTimeout(function () {
   console.log("callback");
@@ -18,7 +18,7 @@ console.log("End");
 // let startDate = new Date().getTime();
 // let EndDate = startDate;
 // while (EndDate < startDate + 10000) {
-//   // wait for 10s to complete
+// // wait for 10s to complete
 //   EndDate = new Date().getTime();
 // }
 // console.log("while expires");

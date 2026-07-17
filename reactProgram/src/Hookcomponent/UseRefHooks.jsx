@@ -1,5 +1,5 @@
 // useRef is a react hook which capture elements reference and store it to the variable..
-// useRef is a  react hook  that allow us to  create mutable varaible which will not  re-rendering the components..
+// useRef is a react hook that allow us to create mutable varaible which will not  re-rendering the components..
 // useRef is also used for accessing the DOM elements
 
 import { useRef, useState, useEffect } from "react";
@@ -33,7 +33,7 @@ const UseRefHooks = () => {
         -
       </button>
       <h2>Render Count:{Refcount.current}</h2>
-      {/* <input type="text" ref={inputElement} />  // accessing DOM element 
+      {/*<input type="text" ref={inputElement}/>  // accessing DOM element 
       <button onClick={btnclick}> Click Here!</button> */}
     </div>
   );
